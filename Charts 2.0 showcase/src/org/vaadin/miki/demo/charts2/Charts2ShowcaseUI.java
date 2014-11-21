@@ -32,6 +32,7 @@ public class Charts2ShowcaseUI extends UI {
         TabSheet main = new TabSheet();
         main.addTab(new Sprint1Tab(), "New chart types");
         main.addTab(new Sprint2Tab(), "Enhancements 1");
+        main.addTab(new Sprint3Tab(), "Enhancements 2");
         this.setContent(main);
     }
 

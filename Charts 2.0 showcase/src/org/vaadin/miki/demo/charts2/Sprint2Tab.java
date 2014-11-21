@@ -34,9 +34,9 @@ import com.vaadin.addon.charts.themes.GrayTheme;
 import com.vaadin.addon.charts.themes.GridTheme;
 import com.vaadin.addon.charts.themes.HighChartsDefaultTheme;
 import com.vaadin.addon.charts.themes.SkiesTheme;
-import com.vaadin.addon.charts.themes.VaadinDarkTheme;
-import com.vaadin.addon.charts.themes.VaadinLightTheme;
 import com.vaadin.addon.charts.themes.VaadinTheme;
+import com.vaadin.addon.charts.themes.ValoDarkTheme;
+import com.vaadin.addon.charts.themes.ValoLightTheme;
 import com.vaadin.data.Property;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
@@ -98,12 +98,12 @@ public class Sprint2Tab extends CustomComponent {
         buttons.addComponent(highchart);
 
         Button vaadinLight = new Button("VaadinLight", new ThemeChangeListener(
-                VaadinLightTheme.class));
+                ValoLightTheme.class));
         highchart.setId("vl-button");
         buttons.addComponent(vaadinLight);
 
         Button vaadinDark = new Button("VaadinDark", new ThemeChangeListener(
-                VaadinDarkTheme.class));
+                ValoDarkTheme.class));
         highchart.setId("vd-button");
         buttons.addComponent(vaadinDark);
 
